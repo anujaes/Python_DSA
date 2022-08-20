@@ -3,7 +3,8 @@ def exchange(list, pos1, pos2):
     return list
 
 
-def Bubble(list):
+def Bubble(arr):
+    list = arr[:]
     n = len(list)-1
     for i in range(0,n):
         for j in range(n,i,-1):
@@ -13,5 +14,6 @@ def Bubble(list):
     return list
 
 unsorted = [1,4,2,9,0,3,4,6]
-
-print('sorted > ', Bubble(unsorted))
+sorted = Bubble(unsorted)
+print('sorted > ', unsorted)
+print('sorted > ', sorted)
